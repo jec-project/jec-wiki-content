@@ -6,9 +6,26 @@
       "file": "jec-community"
     },
     {
-      "id": "20",
+      "id": "2",
       "name": "Contributing to JEC",
-      "file": "contributing-to-jec"
+      "file": "contributing-to-jec",
+      "children": [
+        {
+          "id": "2.1",
+          "name": "Code of Conduct",
+          "file": "code-of-conduct"
+        },
+        {
+          "id": "2.2",
+          "name": "Submission Guidelines",
+          "file": "submission-guidelines"
+        }
+      ]
+    },
+    {
+      "id": ".",
+      "name": "JEC Contributors",
+      "file": "jec-contributors"
     }
   ]
 }
