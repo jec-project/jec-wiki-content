@@ -13,7 +13,8 @@ Since JEC projects are still under development, please refer to this page to see
 
 | Feature                                        | Planned | Status |
 | ---------------------------------------------- | :-----: | :----: |
-| Add support for EJPs exports/imports           |   June 2018   |   Pending  |
+| Rewrite the console in Angular 6               |   June 2018   |   Pending  |
+| Add support for EJPs exports/imports           |   July 2018   |   Pending  |
 | Add experimental support for HTTP/2            |   ---   |   ---  |
 | Complete SSL support                           |   ---   |   ---  |
 | Add LDAP/REDIS connectors to complete security layer capabilities |   ---   |   ---  |
