@@ -14,7 +14,7 @@ JUTA implementations are built on top of existing unit testing frameworks, such 
 
 ![JUTA Abstraction Layers][jec-juta-abstraction-layers]
 
-[jec-juta-abstraction-layers]: https://raw.githubusercontent.com/jec-project/jec-juta/master/docs/assets/juta-abstraction-layers.png
+[jec-juta-abstraction-layers]: https://raw.githubusercontent.com/jec-project/jec-juta/master/docs/assets/juta-abstraction-layers.png?style=jec-main-logo
 
 ## Relation to Java
 

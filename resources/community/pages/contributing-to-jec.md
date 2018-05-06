@@ -16,6 +16,12 @@ Improving the documentation, examples, and other open source content can be the 
 
 ## Unit Testing Matters!
 
+Creating unit tests is a complex and teadius task. We pay attention to maintain high quality for all JEC projects. 
+
+**Thus, improving existing unit testing and writing missing ones is one of the more important way to contribute to the project.**
+
+Do not hesitate to [submit a Pull Request](./community/submission-guidelines#submitting-a-pull-request) with new test suites.
+
 ## Found a Bug?
 
 If you find a bug in the source code, you can help us by [submitting an issue](./community/submission-guidelines#submitting-an-issue) to our [GitHub Repository][github-url]. Even better, you can submit a Pull Request with a fix.
