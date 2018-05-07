@@ -167,6 +167,50 @@
           "id": "4.2",
           "name": "QuickStart",
           "file": "jec-cli/jec-cli-quickstart"
+        },
+        {
+          "id": "4.3",
+          "name": "JEC Commands",
+          "file": "jec-cli/jec-commands/jec-commands",
+          "children": [
+            {
+              "id": "4.3.1",
+              "name": "VERSION",
+              "file": "jec-cli/jec-commands/version"
+            },
+            {
+              "id": "4.3.2",
+              "name": "HELP",
+              "file": "jec-cli/jec-commands/help"
+            },
+            {
+              "id": "4.3.3",
+              "name": "GLASSCAT-INSTALL",
+              "file": "jec-cli/jec-commands/glasscat-install"
+            },
+            {
+              "id": "4.3.4",
+              "name": "CREATE-BOOTSTRAP",
+              "file": "jec-cli/jec-commands/create-bootstrap"
+            },
+            {
+              "id": "4.3.5",
+              "name": "CREATE-JSLET",
+              "file": "jec-cli/jec-commands/create-jslet"
+            }
+          ]
+        },
+        {
+          "id": "4.4",
+          "name": "Glasscat Commands",
+          "file": "jec-cli/glasscat-commands/glasscat-commands",
+          "children": [
+            {
+              "id": "4.4.1",
+              "name": "START",
+              "file": "jec-cli/glasscat-commands/start"
+            }
+          ]
         }
       ]
     },
