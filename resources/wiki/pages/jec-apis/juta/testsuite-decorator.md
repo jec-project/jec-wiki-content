@@ -8,10 +8,10 @@ The JUTA specification indicates that you must provide the description of a test
 You describe a test suite by using the `description` property of the `TestSuiteParams` interface:
 
 ```typescript
-@TestSuite({
-  description: "My test suite description"
-})
-export class MyClassToTest() {}
+    @TestSuite({
+      description: "My test suite description"
+    })
+    export class MyClassToTest() {}
 ```
 
 ## Ignoring a test suite
@@ -21,11 +21,11 @@ If for some reason, you just want a test suite to be ignored, you temporarily di
 To ignore a test suite in the JUTA specification, you just set the optional `disabled` property of the `TestSuiteParams` interface to `true`:
 
 ```typescript
-@TestSuite({
-  description: "Test is ignored as a demonstration",
-  disabled: true
-})
-export class MyClassToTest() {}
+    @TestSuite({
+      description: "Test is ignored as a demonstration",
+      disabled: true
+    })
+    export class MyClassToTest() {}
 ```
 
 ## Test execution order
@@ -42,13 +42,12 @@ By setting the `testOrder` optional property of the `TestSuiteParams` interface,
 | TestSorters.ORDER_ASCENDING | Sorts the test methods by using the order parameter of the TestParams interface, from lower to higher value |
 | TestSorters.ORDER_DESCENDING | Sorts the test methods by using the order parameter of the TestParams interface, from higher to lower value |
 
-
 ```typescript
-@TestSuite({
-  description: "Test methods are executed in lexicographic order",
-  testOrder: TestSorters.NAME_DESCENDING
-})
-export class MyClassToTest() {}
+    @TestSuite({
+      description: "Test methods are executed in lexicographic order",
+      testOrder: TestSorters.NAME_DESCENDING
+    })
+    export class MyClassToTest() {}
 ```
 
 ## Instantiation Policy
@@ -58,11 +57,11 @@ Instantiation policy allows developers to specify behavior of test isolation pri
 By setting the optional `instantiationPolicy` property of the `TestSuiteParams` interface to `InstantiationPolicy.MULTIPLE`, you can force the test runner to create a new instance of the test class for each test.
 
 ```typescript
-@TestSuite({
-  description: "Each test is executed in a new instance of the MyClassToTest class",
-  instantiationPolicy: InstantiationPolicy.MULTIPLE
-})
-export class MyClassToTest() {}
+    @TestSuite({
+      description: "Each test is executed in a new instance of the MyClassToTest class",
+      instantiationPolicy: InstantiationPolicy.MULTIPLE
+    })
+    export class MyClassToTest() {}
 ```
 
 For more details, please refer to [Test Classes Instantiation Policy](./docs/reference/jec-apis/juta/test-classes-instantiation-policy).

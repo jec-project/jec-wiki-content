@@ -16,22 +16,22 @@ There are four fixture annotations:
 The `@BeforeClass` decorator allows to invoke a **static** method before running all `@Test` methods of a test class. You typically use this decorator to initialize behaviour of components shared by test methods, such as connection to a data base, etc..
 
 ```typescript
-@TestSuite({
-  description: "My test suite",
-  instantiationPolicy: InstantiationPolicy.MULTIPLE
-})
-export class MyClassTest {
-  
-  @BeforeClass({
-    description: "should be run before 'methodToTest'"
-  })
-  public static initTest():void {}
+    @TestSuite({
+      description: "My test suite",
+      instantiationPolicy: InstantiationPolicy.MULTIPLE
+    })
+    export class MyClassTest {
+      
+      @BeforeClass({
+        description: "should be run before 'methodToTest'"
+      })
+      public static initTest():void {}
 
-  @Test({
-    description: "should be run after 'initTest'"
-  })
-  public methodToTest():void {}
-}
+      @Test({
+        description: "should be run after 'initTest'"
+      })
+      public methodToTest():void {}
+    }
 ```
 
 This decorator is ignored when the [`instantiationPolicy`](./docs/reference/jec-apis/juta/testsuite-decorator#instantiation-policy) property is not specified, or set to `InstantiationPolicy.SINGLE`.
@@ -41,22 +41,22 @@ This decorator is ignored when the [`instantiationPolicy`](./docs/reference/jec-
 The `@AfterClass` decorator allows to invoke a **static** method after all the `@Test` methods of a test class have been run. You typically use this decorator to reset behaviour of components shared by test methods, such as closing connection to a data base, etc..
 
 ```typescript
-@TestSuite({
-  description: "My test suite",
-  instantiationPolicy: InstantiationPolicy.MULTIPLE
-})
-export class MyClassTest {
-  
-  @AfterClass({
-    description: "should be run after 'methodToTest'"
-  })
-  public static resetTest():void {}
+    @TestSuite({
+      description: "My test suite",
+      instantiationPolicy: InstantiationPolicy.MULTIPLE
+    })
+    export class MyClassTest {
+      
+      @AfterClass({
+        description: "should be run after 'methodToTest'"
+      })
+      public static resetTest():void {}
 
-  @Test({
-    description: "should be run before 'resetTest'"
-  })
-  public methodToTest():void {}
-}
+      @Test({
+        description: "should be run before 'resetTest'"
+      })
+      public methodToTest():void {}
+    }
 ```
 
 This decorator is ignored when the [`instantiationPolicy`](./docs/reference/jec-apis/juta/testsuite-decorator#instantiation-policy) property is not specified, or set to `InstantiationPolicy.SINGLE`.
@@ -66,21 +66,21 @@ This decorator is ignored when the [`instantiationPolicy`](./docs/reference/jec-
 The `@BeforeAll` decorator allows to invoke a method before running all `@Test` methods of a test class. You typically use this decorator to initialize behaviour of components shared by test methods, such as connection to a data base, etc..
 
 ```typescript
-@TestSuite({
-  description: "My test suite"
-})
-export class MyClassTest {
-  
-  @BeforeAll({
-    description: "should be run before 'methodToTest'"
-  })
-  public initTest():void {}
+    @TestSuite({
+      description: "My test suite"
+    })
+    export class MyClassTest {
+      
+      @BeforeAll({
+        description: "should be run before 'methodToTest'"
+      })
+      public initTest():void {}
 
-  @Test({
-    description: "should be run after 'initTest'"
-  })
-  public methodToTest():void {}
-}
+      @Test({
+        description: "should be run after 'initTest'"
+      })
+      public methodToTest():void {}
+    }
 ```
 
 This decorator is ignored when the [`instantiationPolicy`](./docs/reference/jec-apis/juta/testsuite-decorator#instantiation-policy) property is set to `InstantiationPolicy.MULTIPLE`.
@@ -90,21 +90,21 @@ This decorator is ignored when the [`instantiationPolicy`](./docs/reference/jec-
 The `@AfterAll` decorator allows to invoke a method after all the `@Test` methods of a test class have been run. You typically use this decorator to reset behaviour of components shared by test methods, such as closing connection to a data base, etc..
 
 ```typescript
-@TestSuite({
-  description: "My test suite"
-})
-export class MyClassTest {
-  
-  @AfterAll({
-    description: "should be run after 'methodToTest'"
-  })
-  public resetTest():void {}
+    @TestSuite({
+      description: "My test suite"
+    })
+    export class MyClassTest {
+      
+      @AfterAll({
+        description: "should be run after 'methodToTest'"
+      })
+      public resetTest():void {}
 
-  @Test({
-    description: "should be run before 'resetTest'"
-  })
-  public methodToTest():void {}
-}
+      @Test({
+        description: "should be run before 'resetTest'"
+      })
+      public methodToTest():void {}
+    }
 ```
 
 This decorator is ignored when the [`instantiationPolicy`](./docs/reference/jec-apis/juta/testsuite-decorator#instantiation-policy) property is set to `InstantiationPolicy.MULTIPLE`.
@@ -114,26 +114,26 @@ This decorator is ignored when the [`instantiationPolicy`](./docs/reference/jec-
 The `@Before` decorator allows to invoke a method before running each `@Test` methods of a test class. If you need to initialize the same data for each test, you put that data in instance variables and initialize them in a `@Before` setup method.
 
 ```typescript
-@TestSuite({
-  description: "My test suite"
-})
-export class MyClassTest {
-  
-  @Before({
-    description: "should be run before 'method1ToTest' and 'method2ToTest'"
-  })
-  public initTest():void {}
+    @TestSuite({
+      description: "My test suite"
+    })
+    export class MyClassTest {
+      
+      @Before({
+        description: "should be run before 'method1ToTest' and 'method2ToTest'"
+      })
+      public initTest():void {}
 
-  @Test({
-    description: "should be run immediately after 'initTest'"
-  })
-  public method1ToTest():void {}
+      @Test({
+        description: "should be run immediately after 'initTest'"
+      })
+      public method1ToTest():void {}
 
-  @Test({
-    description: "should be run immediately after 'initTest'"
-  })
-  public method2ToTest():void {}
-}
+      @Test({
+        description: "should be run immediately after 'initTest'"
+      })
+      public method2ToTest():void {}
+    }
 ```
 
 ## `@After` decorator
@@ -141,26 +141,26 @@ export class MyClassTest {
 The `@After` decorator allows to invoke a method after running each `@Test` methods of a test class. If you need to clean up data after each test, you put that data in instance variables and reset them in a `@After` method.
 
 ```typescript
-@TestSuite({
-  description: "My test suite"
-})
-export class MyClassTest {
-  
-  @After({
-    description: "should be run after 'method1ToTest' and 'method2ToTest'"
-  })
-  public resetTest():void {}
+    @TestSuite({
+      description: "My test suite"
+    })
+    export class MyClassTest {
+      
+      @After({
+        description: "should be run after 'method1ToTest' and 'method2ToTest'"
+      })
+      public resetTest():void {}
 
-  @Test({
-    description: "should be run just before 'resetTest'"
-  })
-  public method1ToTest():void {}
+      @Test({
+        description: "should be run just before 'resetTest'"
+      })
+      public method1ToTest():void {}
 
-  @Test({
-    description: "should be run just before 'resetTest'"
-  })
-  public method2ToTest():void {}
-}
+      @Test({
+        description: "should be run just before 'resetTest'"
+      })
+      public method2ToTest():void {}
+    }
 ```
 
 ## Test invocation example

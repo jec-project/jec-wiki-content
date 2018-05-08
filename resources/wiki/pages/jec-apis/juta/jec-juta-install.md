@@ -12,8 +12,8 @@ JEC JUTA needs the following system parameters in order to work correctly:
 
 Set up the JEC JUTA module with:
 
-```bash
-$ npm install jec-juta --save-dev
+```shell
+    $ npm install jec-juta --save-dev
 ```
 
 ## JUTA Implementation

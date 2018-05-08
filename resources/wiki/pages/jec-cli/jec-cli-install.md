@@ -12,20 +12,20 @@ JEC CLI needs the following system parameters in order to work correctly:
 
 Set up the JEC CLI module with:
 
-```bash
-$ npm install -g jec-cli
+```shell
+    $ npm install -g jec-cli
 ```
 
 ## Usage 
 
 **JEC commands:**
 
-```bash
-$ jec help
+```shell
+    $ jec help
 ```
 
 **GlassCat commands:**
 
-```bash
-$ glasscat help
+```shell
+    $ glasscat help
 ```

@@ -7,10 +7,10 @@
 The JUTA specification indicates that you must provide the description of a test case. You describe a test case by using the `description` property of the `TestParams` interface:
 
 ```typescript
-@Test({
-  description: "test is ignored as a demonstration"
-})
-public myTestMethod():void {}
+    @Test({
+      description: "test is ignored as a demonstration"
+    })
+    public myTestMethod():void {}
 ```
 
 ## Ignoring a test case
@@ -20,11 +20,11 @@ If for some reason, you just want a test case to be ignored, you temporarily dis
 To ignore a test case in the JUTA specification, you just set the optional `disabled` property of the `TestParams` interface to `true`:
 
 ```typescript
-@Test({
-  description: "my test case description",
-  disabled: true
-})
-public myTestMethod():void {}
+    @Test({
+      description: "my test case description",
+      disabled: true
+    })
+    public myTestMethod():void {}
 ```
 
 ## Test execution order
@@ -34,23 +34,23 @@ By setting the [`testOrder`](./docs/reference/jec-apis/juta/testsuite-decorator#
 Moreover, by setting the `testOrder` property to `TestSorters.ORDER_ASCENDING`, or `TestSorters.ORDER_DESCENDING`, you can specify the execution order for each test. Thus, the `order` optional property of the `TestParams` interface defines the execution order of a test method invocations in the test suite:
 
 ```typescript
-@Test({
-  description: "this test case should be executed in third position",
-  order: 3
-})
-public myThirdTestMethod():void {}
+    @Test({
+      description: "this test case should be executed in third position",
+      order: 3
+    })
+    public myThirdTestMethod():void {}
 
-@Test({
-  description: "this test case should be executed in first position",
-  order: 1
-})
-public myFirstTestMethod():void {}
+    @Test({
+      description: "this test case should be executed in first position",
+      order: 1
+    })
+    public myFirstTestMethod():void {}
 
-@Test({
-  description: "this test case should be executed in second position",
-  order: 2
-})
-public mySecondTestMethod():void {}
+    @Test({
+      description: "this test case should be executed in second position",
+      order: 2
+    })
+    public mySecondTestMethod():void {}
 ```
 
 ## Repeating tests
@@ -61,10 +61,9 @@ The JUTA specification makes this easy by introducing the `repeat` optional prop
 This parameter specifies the number of repetitions for a `@Test` method:
 
 ```typescript
-@Test({
-  description: "should be repeated 5 times",
-  repeat: 5
-})
-public myTestMethod():void {}
+    @Test({
+      description: "should be repeated 5 times",
+      repeat: 5
+    })
+    public myTestMethod():void {}
 ```
-

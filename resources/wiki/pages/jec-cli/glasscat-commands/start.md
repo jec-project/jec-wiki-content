@@ -17,6 +17,6 @@
 
 The following command will start the GlassCat server in _development mode_:
 
-```bash
-glasscat start
+```shell
+    glasscat start
 ```

@@ -29,29 +29,29 @@
 
 The command:
 
-```bash
-jec create-bootstrap --name=MyBootstrapClass --index=2
+```shell
+    jec create-bootstrap --name=MyBootstrapClass --index=2
 ```
 
 will build the following class:
 
 ```typescript
-import {AbstractBootstrapScript, Bootstrap} from "jec-commons";
-import {DomainContainer} from "jec-glasscat-core";
+    import {AbstractBootstrapScript, Bootstrap} from "jec-commons";
+    import {DomainContainer} from "jec-glasscat-core";
 
-/**
- * Runs frameworks initialization scripts.
- */
-@Bootstrap({
-  index: 2
-})
-export class MyBootstrapClass extends AbstractBootstrapScript {
+    /**
+    * Runs frameworks initialization scripts.
+    */
+    @Bootstrap({
+      index: 2
+    })
+    export class MyBootstrapClass extends AbstractBootstrapScript {
 
-  /**
-   * @inheritDoc
-   */
-  public run(container:DomainContainer):void {
-    // TODO Auto-generated method stub
-  }
-}
+      /**
+      * @inheritDoc
+      */
+      public run(container:DomainContainer):void {
+        // TODO Auto-generated method stub
+      }
+    }
 ```

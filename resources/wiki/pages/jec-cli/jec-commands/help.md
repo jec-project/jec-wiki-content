@@ -12,22 +12,22 @@ The command `jec h` is equivalent to `jec help`.
 
 You can use the name of a command to get help about it:
 
-```bash
-jec help glasscat-install
-      _   _____    ____      ____   _       ___
-     | | | ____|  / ___|    / ___| | |     |_ _|
-  _  | | |  _|   | |       | |     | |      | |
- | |_| | | |___  | |___    | |___  | |___   | |
-  \___/  |_____|  \____|    \____| |_____| |___|
+```shell
+    jec help glasscat-install
+        _   _____    ____      ____   _       ___
+        | | | ____|  / ___|    / ___| | |     |_ _|
+    _  | | |  _|   | |       | |     | |      | |
+    | |_| | | |___  | |___    | |___  | |___   | |
+    \___/  |_____|  \____|    \____| |_____| |___|
 
--> GLASSCAT-INSTALL
+    -> GLASSCAT-INSTALL
 
-Installs a new a GlassCat server in the current directory.
+    Installs a new a GlassCat server in the current directory.
 
-    alias: gi
+        alias: gi
 
-    usage: GLASSCAT-INSTALL [--version] [--env]
+        usage: GLASSCAT-INSTALL [--version] [--env]
 
-    - env                 Defines which setup to use for the server environment.
-    - version             Defines a specific version of the GlassCat server to install.
+        - env                 Defines which setup to use for the server environment.
+        - version             Defines a specific version of the GlassCat server to install.
 ```

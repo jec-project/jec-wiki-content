@@ -29,31 +29,31 @@
 
 The command:
 
-```bash
-jec create-jslet --name=MyJslet --urlPatterns="/my/url"
+```shell
+    jec create-jslet --name=MyJslet --urlPatterns="/my/url"
 ```
 
 will build the following class:
 
 ```typescript
-import {HttpJslet, WebJslet, HttpRequest, HttpResponse} from "jec-exchange";
-import {HttpHeader} from "jec-commons";
+    import {HttpJslet, WebJslet, HttpRequest, HttpResponse} from "jec-exchange";
+    import {HttpHeader} from "jec-commons";
 
-/**
- * <code>MyJslet</code>: auto-generated jslet.
- */
-@WebJslet({
-  name: "MyJslet",
-  urlPatterns: ["/my/url"]
-})
-export class MyJslet extends HttpJslet {
-  
-  /**
-   * @inheritDoc
-   */
-  public doGet(req:HttpRequest, res:HttpResponse, exit:Function):void {
-    // TODO Auto-generated method stub
-    exit(req, res);
-  }
-}
+    /**
+    * <code>MyJslet</code>: auto-generated jslet.
+    */
+    @WebJslet({
+      name: "MyJslet",
+      urlPatterns: ["/my/url"]
+    })
+    export class MyJslet extends HttpJslet {
+      
+      /**
+      * @inheritDoc
+      */
+      public doGet(req:HttpRequest, res:HttpResponse, exit:Function):void {
+        // TODO Auto-generated method stub
+        exit(req, res);
+      }
+    }
 ```

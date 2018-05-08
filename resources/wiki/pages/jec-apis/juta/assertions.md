@@ -13,21 +13,21 @@ JUTA allows you to use any assertion library you wish. This means you can use li
 Using assertions with JUTA is very easy; you just have to import an assertion library and to use it in the body of a `@Test` method, as shown below:
 
 ```typescript
-import { TestSuite, Test } from "jec-juta";
-import { expect } from "chai";
+    import { TestSuite, Test } from "jec-juta";
+    import { expect } from "chai";
 
-@TestSuite({
-  description: "Tests assertions"
-})
-export class AssertionTest {
+    @TestSuite({
+      description: "Tests assertions"
+    })
+    export class AssertionTest {
 
-  @Test({
-    description: "should validate the result of the sum"
-  })
-  public testEqual():void {
-    expect(2).to.equal(1 + 1);
-  }
-}
+      @Test({
+        description: "should validate the result of the sum"
+      })
+      public testEqual():void {
+        expect(2).to.equal(1 + 1);
+      }
+    }
 ```
 
 All assertion libraries can be run with any JavaScript unit testing framework. It means that unit tests written with JUTA will always work, regardless of the JUTA implementation you use.

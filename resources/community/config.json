@@ -19,11 +19,28 @@
           "id": "2.2",
           "name": "Submission Guidelines",
           "file": "submission-guidelines"
+        },
+        {
+          "id": "2.3",
+          "name": "Coding Rules",
+          "file": "coding-rules"
+        },
+
+
+        {
+          "id": "2.5",
+          "name": "Contributor License Agreement",
+          "file": "contributor-license-agreement"
         }
       ]
     },
     {
-      "id": ".",
+      "id": "3",
+      "name": "Communicating About JEC",
+      "file": "communicating-about-jec"
+    },
+    {
+      "id": "4",
       "name": "JEC Contributors",
       "file": "jec-contributors"
     }

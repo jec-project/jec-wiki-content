@@ -12,19 +12,19 @@ The command `glasscat h` is equivalent to `glasscat help`.
 
 You can use the name of a command to get help about it:
 
-```bash
-glasscat help start
-      _   _____    ____      ____   _       ___
-     | | | ____|  / ___|    / ___| | |     |_ _|
-  _  | | |  _|   | |       | |     | |      | |
- | |_| | | |___  | |___    | |___  | |___   | |
-  \___/  |_____|  \____|    \____| |_____| |___|
+```shell
+    glasscat help start
+        _   _____    ____      ____   _       ___
+        | | | ____|  / ___|    / ___| | |     |_ _|
+    _  | | |  _|   | |       | |     | |      | |
+    | |_| | | |___  | |___    | |___  | |___   | |
+    \___/  |_____|  \____|    \____| |_____| |___|
 
--> START
+    -> START
 
-starts a GlassCat server
+    starts a GlassCat server
 
-    usage: START [--env]
+        usage: START [--env]
 
-    - env                 Defines which setup to use for the server environment.
+        - env                 Defines which setup to use for the server environment.
 ```

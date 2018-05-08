@@ -24,7 +24,7 @@ Do not hesitate to [submit a Pull Request](./community/submission-guidelines#sub
 
 ## Found a Bug?
 
-If you find a bug in the source code, you can help us by [submitting an issue](./community/submission-guidelines#submitting-an-issue) to our [GitHub Repository][github-url]. Even better, you can submit a Pull Request with a fix.
+If you find a bug in the source code, you can help us by [submitting an issue](./community/submission-guidelines#submitting-an-issue) to our [GitHub Repository][github-url]. Even better, you can submit a [Pull Request](./community/submission-guidelines#submitting-a-pull-request) with a fix.
 
 ## Missing a Feature?
 
