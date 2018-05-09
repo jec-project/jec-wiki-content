@@ -1,8 +1,12 @@
 # Communicating About JEC
 
+Communication on JEC Project is strongly encouraged.
+
+Any one is welcome to promote the project, as long as it respects the terms of the following guidelines.
+
 ## General JEC reference guidelines
 
-You may use **JEC reference** _("JEC", "JavaScript Enterprise Containe")_  (but not logos or taglines) to identify JEC products, services, and programs on packaging, promotional, and advertising materials, provided you meet the following guidelines:
+You may use **JEC reference** _("JEC", "JavaScript Enterprise Container")_  (but not logos or taglines) to identify JEC products, services, and programs on packaging, promotional, and advertising materials, provided you meet the following guidelines:
 
 - You may not include any JEC reference in your company name, product or service name, or domain name.
 - You may not include any JEC reference in your social media account name, page(s) or community, without written authorization from the JEC Project Owner, except to describe the purpose by referring to the JEC product.
