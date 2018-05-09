@@ -67,6 +67,11 @@
       "children": [
         {
           "id": "3.1",
+          "name": "JEC API Reference",
+          "file": "jec-apis/jec-apis-references"
+        },
+        {
+          "id": "3.1",
           "name": "JEC Commons",
           "children": [
             { "id": "3.1.1", "name": "Bootstrap" },

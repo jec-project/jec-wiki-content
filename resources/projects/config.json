@@ -86,7 +86,8 @@
       "label": "jec-commons-node",
       "description":
         "Node.js reusable components related to the JavaScript Enterprise Container (JEC) specification.",
-      "progress": 100
+      "progress": 100,
+	  "enableApiRef": true
     },
     {
       "label": "jec-commons",
