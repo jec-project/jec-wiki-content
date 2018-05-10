@@ -12,5 +12,6 @@ The official command line client for JavaScript Entreprise Container Projects.
   - [GLASSCAT-INSTALL](./docs/reference/jec-cli/jec-commands/glasscat-install)
   - [CREATE-BOOTSTRAP](./docs/reference/jec-cli/jec-commands/create-bootstrap)
   - [CREATE-JSLET](./docs/reference/jec-cli/jec-commands/create-jslet)
+  - [CREATE-INTERFACE](./docs/reference/jec-cli/jec-commands/create-interface)
 4. [GlassCat commands](./docs/reference/jec-cli/glasscat-commands/glasscat-commands)
   - START

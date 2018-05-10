@@ -11,3 +11,5 @@ When you invoke a JEC command, its context will be executed from the current rep
   - [GLASSCAT-INSTALL](./docs/reference/jec-cli/jec-commands/glasscat-install)
   - [CREATE-BOOTSTRAP](./docs/reference/jec-cli/jec-commands/create-bootstrap)
   - [CREATE-JSLET](./docs/reference/jec-cli/jec-commands/create-jslet)
+  - [CREATE-INTERFACE](./docs/reference/jec-cli/jec-commands/create-interface)
+  
