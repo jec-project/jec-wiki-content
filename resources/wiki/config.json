@@ -71,84 +71,94 @@
           "file": "jec-apis/jec-apis-references"
         },
         {
-          "id": "3.1",
+          "id": "3.2",
           "name": "JEC Commons",
+          "file": "jec-apis/jec-commons/jec-commons",
           "children": [
-            { "id": "3.1.1", "name": "Bootstrap" },
-            { "id": "3.1.2", "name": "Jslet" },
-            { "id": "3.1.3", "name": "Security API" },
-            { "id": "3.1.4", "name": "JCAD" }
+            { "id": "3.2.1", "name": "Logging API" },
+            { "id": "3.2.2", "name": "JCAD" },
+            { "id": "3.2.3", "name": "Bootstrap" },
+            { "id": "3.2.4", "name": "Class Loader" },
+            { "id": "3.2.5", "name": "i18n" }
           ]
         },
-        { "id": "3.2", "name": "JARS" },
+        {
+          "id": "3.3",
+          "name": "JEC Exchange",
+          "children": [
+            { "id": "3.3.1", "name": "Jslet API" },
+            { "id": "3.3.2", "name": "Security API" }
+          ]
+        },
+        { "id": "3.4", "name": "JARS" },
         { "id": "3.3", "name": "JDI" },
         {
-          "id": "3.4",
+          "id": "3.5",
           "name": "JUTA",
           "file": "jec-apis/juta/jec-juta",
           "children": [
             {
-              "id": "3.4.1",
+              "id": "3.5.1",
               "name": "Install",
               "file": "jec-apis/juta/jec-juta-install"
             },
             {
-              "id": "3.4.2",
+              "id": "3.5.2",
               "name": "Quick Start",
               "file": "jec-apis/juta/jec-juta-quickstart"
             },
             {
-              "id": "3.4.3",
+              "id": "3.5.3",
               "name": "JUTA Implementations",
               "file": "jec-apis/juta/jec-juta-implementations"
             },
             {
-              "id": "3.4.4",
+              "id": "3.5.4",
               "name": "Usage and Idioms",
               "file": "jec-apis/juta/jec-juta-usage-and-idioms",
               "children": [
                 {
-                  "id": "3.4.4.1",
+                  "id": "3.5.4.1",
                   "name": "Assertions",
                   "file": "jec-apis/juta/assertions"
                 },
                 {
-                  "id": "3.4.4.2",
+                  "id": "3.5.4.2",
                   "name": "@TestSuite",
                   "file": "jec-apis/juta/testsuite-decorator"
                 },
                 {
-                  "id": "3.4.4.3",
+                  "id": "3.5.4.3",
                   "name": "@Test",
                   "file": "jec-apis/juta/test-decorator"
                 },
                 {
-                  "id": "3.4.4.4",
+                  "id": "3.5.4.4",
                   "name": "Test Fixtures",
                   "file": "jec-apis/juta/test-fixtures"
                 },
                 {
-                  "id": "3.4.4.5",
+                  "id": "3.5.4.5",
                   "name": "Asynchronous Testing",
                   "file": "jec-apis/juta/asynchronous-testing"
                 },
                 {
-                  "id": "3.4.4.6",
+                  "id": "3.5.4.6",
                   "name": "Ignoring Tests",
                   "file": "jec-apis/juta/ignoring-tests"
                 },
                 {
-                  "id": "3.4.4.7",
+                  "id": "3.5.4.7",
                   "name": "Test Classes Instantiation Policy",
                   "file": "jec-apis/juta/test-classes-instantiation-policy"
                 },
                 {
-                  "id": "3.4.4.8",
+                  "id": "3.5.4.8",
                   "name": "Scenario Testing With JUTA",
                   "file": "jec-apis/juta/scenario-testing-with-juta"
                 },
                 {
-                  "id": "3.4.4.9",
+                  "id": "3.5.4.9",
                   "name": "Working With Test Groups",
                   "file": "jec-apis/juta/working-with-test-groups"
                 }
@@ -227,7 +237,14 @@
     {
       "id": "5",
       "name": "GlassCat Server",
-      "file": "glasscat/glasscat-server"
+      "file": "glasscat/glasscat-server",
+      "children": [
+        {
+          "id": "5.1",
+          "name": "GlassCat Architecture",
+          "file": "glasscat/glasscat-architecture"
+        }
+      ]
     },
     {
       "id": "6",
