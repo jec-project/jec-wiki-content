@@ -75,7 +75,11 @@
           "name": "JEC Commons",
           "file": "jec-apis/jec-commons/jec-commons",
           "children": [
-            { "id": "3.2.1", "name": "Logging API" },
+            {
+              "id": "3.2.1",
+              "name": "Logging API",
+              "file": "jec-apis/jec-commons/logging-api"
+            },
             { "id": "3.2.2", "name": "JCAD" },
             { "id": "3.2.3", "name": "Bootstrap" },
             { "id": "3.2.4", "name": "Class Loader" },
@@ -217,6 +221,11 @@
               "id": "4.3.6",
               "name": "CREATE-INTERFACE",
               "file": "jec-cli/jec-commands/create-interface"
+            },
+            {
+              "id": "4.3.7",
+              "name": "CREATE-TEST-SUITE",
+              "file": "jec-cli/jec-commands/create-test-suite"
             }
           ]
         },
