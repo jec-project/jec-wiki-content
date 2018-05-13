@@ -80,8 +80,13 @@
               "name": "Logging API",
               "file": "jec-apis/jec-commons/logging-api"
             },
-            { "id": "3.2.2", "name": "JCAD" },
-            { "id": "3.2.3", "name": "Bootstrap" },
+            {
+              "id": "3.2.2",
+              "name": "Bootstrap API",
+              "file": "jec-apis/jec-commons/bootstrap-api"
+            },
+            { "id": "3.2.3", "name": "JCAD" },
+
             { "id": "3.2.4", "name": "Class Loader" },
             { "id": "3.2.5", "name": "i18n" }
           ]
