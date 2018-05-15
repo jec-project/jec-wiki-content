@@ -85,7 +85,11 @@
               "name": "Bootstrap API",
               "file": "jec-apis/jec-commons/bootstrap-api"
             },
-            { "id": "3.2.3", "name": "JCAD" },
+            {
+              "id": "3.2.3",
+              "name": "JCAD",
+              "file": "jec-apis/jec-commons/jcad-api"
+            },
 
             { "id": "3.2.4", "name": "Class Loader" },
             { "id": "3.2.5", "name": "i18n" }
