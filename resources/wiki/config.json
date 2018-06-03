@@ -240,6 +240,16 @@
               "id": "4.3.7",
               "name": "CREATE-TEST-SUITE",
               "file": "jec-cli/jec-commands/create-test-suite"
+            },
+			{
+              "id": "4.3.8",
+              "name": "CREATE-RESOURCE",
+              "file": "jec-cli/jec-commands/create-resource"
+            },
+			{
+              "id": "4.3.9",
+              "name": "CREATE-ROOT-PATH",
+              "file": "jec-cli/jec-commands/create-root-path"
             }
           ]
         },

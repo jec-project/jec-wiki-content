@@ -14,5 +14,7 @@ The official command line client for JavaScript Entreprise Container Projects.
   - [CREATE-JSLET](./docs/reference/jec-cli/jec-commands/create-jslet)
   - [CREATE-INTERFACE](./docs/reference/jec-cli/jec-commands/create-interface)
   - [CREATE-TEST-SUITE](./docs/reference/jec-cli/jec-commands/create-test-suite)
+  - [CREATE-ROOT-PATH](./docs/reference/jec-cli/jec-commands/create-root-path)
+  - [CREATE-ROOT-RESOURCE](./docs/reference/jec-cli/jec-commands/create-root-resource)
 4. [GlassCat commands](./docs/reference/jec-cli/glasscat-commands/glasscat-commands)
   - START
