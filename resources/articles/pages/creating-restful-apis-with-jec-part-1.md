@@ -11,7 +11,7 @@
 
 > This series shows how to create restful APIs. In part one, we'll learn about JARS and deploying microservices in the JavaScript Enterprise Container specification.
 
-This article is the first of a series focusing on building RESTful APIs over [Node.js][node-js-url] by using the "[JavaScript Enterprise Container][jec-url]" ([JEC][jec-url]) specification and its default implementation: GlassCat application server.
+This article is the first of a series focusing on building RESTful APIs over [Node.js](https://nodejs.org/en/) by using the "[JavaScript Enterprise Container](http://jecproject.org/)" ([JEC](http://jecproject.org/)) specification and its default implementation: GlassCat application server.
 
 
 
@@ -25,7 +25,7 @@ Rest assured that the JEC installation process is very simple:
 - [GlassCat install tutorial](https://www.youtube.com/watch?v=q9PLW8ghxkU) (YouTube)
 - [Microservice project deployment](https://www.youtube.com/watch?v=N_85zglEfe4) (YouTube)
 
-We assume that you are familiar with [TypeScript](https://www.typescriptlang.org/) and have a fully functional [Node.js][node-js-url] environment installed.
+We assume that you are familiar with [TypeScript](https://www.typescriptlang.org/) and have a fully functional [Node.js](https://nodejs.org/en/) environment installed.
 
 The context root used for this project is `rest-api-sample`.
 
@@ -37,7 +37,7 @@ The "JavaScript API for RESTful Services" (_JARS_) specification defines the way
 
 As GlassCat is the default JEC implementation, _Sandcat_ is the default JARS implementation, built over the GlassCat core API. However, the developer does not need to worry about how GlassCat and Sandcat work together. By creating a project from the microservice GPM (_Glasscat Project Model_), a pre-configured environment is ready to use and deploy.
 
-Moreover, [JEC CLI][jec-cli-url] ships with built-in tools that simplify the creation of custom resources and test suites.
+Moreover, [JEC CLI](http://jecproject.org/wiki/docs/reference/jec-cli/jec-cli) ships with built-in tools that simplify the creation of custom resources and test suites.
 
 ### Some Words About JEC Portability
 
@@ -75,17 +75,17 @@ Finally, go to the project root, at `http://localhost:8484/rest-apis-sample/`, t
 
 ### Coming Features
 
-As mentioned in our [previous article][https://dzone.com/articles/javascript-enterprise-container-from-java-to-nodej], [JEC][jec-url] is still under development. We are currently working on three features that will come during summer:
+As mentioned in our [previous article][https://dzone.com/articles/javascript-enterprise-container-from-java-to-nodej], [JEC](http://jecproject.org/) is still under development. We are currently working on three features that will come during summer:
 
 - Refactoring of the admin console by using Angular 6, to improve performance and user experience (_WIP_).
-- Integration of all console actions in [JEC CLI][jec-cli-url].
-- Creation of tools to import/export/share [JEC][jec-url] domains.
+- Integration of all console actions in [JEC CLI](http://jecproject.org/wiki/docs/reference/jec-cli/jec-cli).
+- Creation of tools to import/export/share [JEC](http://jecproject.org/) domains.
 
 ## Creating Our First Resource
 
-[JEC][jec-url] services are located in the `src` package. The microservice GPM created a `resource` folder, which contains a `version` folder. Both of these packages are commonly used to store JARS resources. The GPM also created two sample classes: `Hello` and `TestApi_v_1_0`. These classes will not be used in this tutorial; so, they can be deleted.
+[JEC](http://jecproject.org/) services are located in the `src` package. The microservice GPM created a `resource` folder, which contains a `version` folder. Both of these packages are commonly used to store JARS resources. The GPM also created two sample classes: `Hello` and `TestApi_v_1_0`. These classes will not be used in this tutorial; so, they can be deleted.
 
-Now, we want to create a "`users`" resource to serve app users information through a RESTful web service. Let us use [JEC CLI][jec-cli-url] to deal with tedious tasks.
+Now, we want to create a "`users`" resource to serve app users information through a RESTful web service. Let us use [JEC CLI](http://jecproject.org/wiki/docs/reference/jec-cli/jec-cli) to deal with tedious tasks.
 
 Open a command prompt in the `resource` folder and type the following command:
 
@@ -125,7 +125,7 @@ One important thing with JARS is that method names do not matter. You just have 
 
 Concretely, if you change the method name, new calls to HTTP GET on the `/rest-sample/users` resource will continue to return `"users resource end point called"`.
 
-Another major point is the use of the `@Exit` decorator to expose the callback function. Remember that JARS and [JEC][jec-url] are designed to serve data asynchronously. The callback function, specified by the `@Exit` decorator, takes 3 optional parameters:
+Another major point is the use of the `@Exit` decorator to expose the callback function. Remember that JARS and [JEC](http://jecproject.org/) are designed to serve data asynchronously. The callback function, specified by the `@Exit` decorator, takes 3 optional parameters:
 
 `data`: the body content of the HTTP response, of the type of `any`
 `err`: an object that represents a custom error to be thrown during the process, of the type of `any`
@@ -192,12 +192,8 @@ Then, compile and restart the server to see the result in your browser. When you
 
 Herein, we have presented the "JavaScript API for RESTful Services" (_JARS_) specification and described how to create and deploy REST services from scratch, in few clicks.
 
-We have talked about the minimal implementation to create a fully functional microservice. However, JARS provides much more features to easily manage RESTful services with [Node.js][node-js-url] and GlassCat.
+We have talked about the minimal implementation to create a fully functional microservice. However, JARS provides much more features to easily manage RESTful services with [Node.js](https://nodejs.org/en/) and GlassCat.
 
 In our next article, we will see how the JARS specification helps developers to version REST APIs.
 
 The source code for this article is available at https://github.com/jec-project/jec-app-samples.
-
-[node-js-url](https://nodejs.org/en/)
-[jec-url](http://jecproject.org/)
-[jec-cli-url](http://jecproject.org/wiki/docs/reference/jec-cli/jec-cli)
