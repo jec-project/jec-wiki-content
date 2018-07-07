@@ -14,5 +14,5 @@ When you invoke a JEC command, its context will be executed from the current rep
   - [CREATE-INTERFACE](./docs/reference/jec-cli/jec-commands/create-interface)
   - [CREATE-TEST-SUITE](./docs/reference/jec-cli/jec-commands/create-test-suite)
   - [CREATE-ROOT-PATH](./docs/reference/jec-cli/jec-commands/create-root-path)
-  - [CREATE-ROOT-RESOURCE](./docs/reference/jec-cli/jec-commands/create-root-resource)
+  - [CREATE-RESOURCE](./docs/reference/jec-cli/jec-commands/create-resource)
   
