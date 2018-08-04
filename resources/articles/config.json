@@ -1,5 +1,11 @@
 {
   "data": [
+  
+    { 
+      "title": "Creating RESTful APIs With JEC — Part 2: Version APIs", 
+      "site": "dzone.com", 
+      "ref": "creating-restful-apis-with-jec-—-part-2-version-apis"
+    },
     { 
       "title": "Creating RESTful APIs With JEC — Part 1: JavaScript API for RESTful Services", 
       "site": "dzone.com", 
