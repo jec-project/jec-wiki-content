@@ -1,6 +1,10 @@
 {
   "data": [
-  
+    { 
+      "title": "Creating RESTful APIs With JEC — Part 3: Dependency Injection", 
+      "site": "dzone.com", 
+      "ref": "creating-restful-apis-with-jec-—-part-3-dependency-injection"
+    },
     { 
       "title": "Creating RESTful APIs With JEC — Part 2: Version APIs", 
       "site": "dzone.com", 

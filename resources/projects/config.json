@@ -164,12 +164,6 @@
       "progress": 100
     },
     {
-      "label": "jec-glasscat-cli",
-      "description":
-        "Provides the GlassCat command-line user interface (CLI) API.",
-      "progress": 100
-    },
-    {
       "label": "jec-cheetoh",
       "description": "The GlassCat Project Model (GPM) manager.",
       "progress": 95
